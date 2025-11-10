@@ -1,0 +1,76 @@
+/* ===== ESTILOS GENERALES ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+
+    /* Fondo animado tipo 3D */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background-size: 400% 400%;
+    animation: fondoMovimiento 15s ease infinite;
+}
+
+/* Animación del fondo */
+@keyframes fondoMovimiento {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ===== ENCABEZADOS ===== */
+h1 {
+    text-align: center;
+    color: #00d4ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+}
+
+h2 {
+    color: #00bfff;
+    border-bottom: 2px solid #00bfff;
+    padding-bottom: 5px;
+    margin-top: 40px;
+    text-shadow: 0 0 8px rgba(0, 191, 255, 0.7);
+}
+
+h3 {
+    color: #80e0ff;
+    margin-top: 25px;
+}
+
+/* ===== PÁRRAFOS ===== */
+p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* ===== LISTAS ===== */
+ul {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    list-style-type: square;
+    transition: transform 0.3s;
+}
+
+ul:hover {
+    transform: translateY(-3px);
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #ddd;
+}
